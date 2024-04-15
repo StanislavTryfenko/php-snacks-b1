@@ -19,7 +19,7 @@ $partite = [
     'punteggio' => '55-60',],
 ];
 
-var_dump($partite);
+//var_dump($partite);
 
 foreach ($partite as $partita) {
     echo $partita['casa'].' - '.$partita['ospite'].' | '.$partita['punteggio'].'<br>';
