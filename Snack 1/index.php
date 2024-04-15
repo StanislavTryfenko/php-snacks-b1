@@ -8,20 +8,27 @@ Creiamo un array contenente le partite di basket di un’ipotetica tappa del cal
 Olimpia Milano - Cantù | 55-60 */
 
 $partite = [
-    ['casa' => 'Olimpia Milano',
-    'ospite' => 'Cantù',
-    'punteggio' => '55-60',],
-    ['casa' => 'qualcuno',
-    'ospite' => 'bho',
-    'punteggio' => '55-60',],
-    ['casa' => 'non seguo il basket',
-    'ospite' => 'dammi qualche altra squadra',
-    'punteggio' => '55-60',],
+    [
+        'casa' => 'Olimpia Milano',
+        'ospite' => 'Cantù',
+        'punteggio casa' => '55',
+        'punteggio ospite' => '60',
+    ],
+    [
+        'casa' => 'qualcuno',
+        'ospite' => 'bho',
+        'punteggio casa' => '55',
+        'punteggio ospite' => '60',
+    ],    [
+        'casa' => 'non seguo il basket',
+        'ospite' => 'dammi qualche altra squadra',
+        'punteggio casa' => '55',
+        'punteggio ospite' => '60',
+    ],
 ];
 
 //var_dump($partite);
 
 foreach ($partite as $partita) {
-    echo $partita['casa'].' - '.$partita['ospite'].' | '.$partita['punteggio'].'<br>';
+    echo $partita['casa'] . ' - ' . $partita['ospite'] . ' | ' . $partita['punteggio casa'] . '-' . $partita['punteggio ospite'] . '<br>';
 };
-?>
