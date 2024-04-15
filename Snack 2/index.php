@@ -31,7 +31,11 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” 
         $email = $_GET['email'];
         $age = $_GET['age'];
 
-        if (strlen($name) > 3 && !filter_var($email, FILTER_VALIDATE_EMAIL) && is_numeric($age)) {
+        //var_dump($name);
+        //var_dump($email);
+        //var_dump($age);
+
+        if (strlen($name) > 3 && filter_var($email, FILTER_VALIDATE_EMAIL) && is_numeric($age)) {
             echo 'Accesso riuscito';
         } else {
             echo 'Accesso negato';
